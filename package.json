@@ -2,9 +2,12 @@
     "name": "api-ia-emotions",
     "version": "1.0.0",
     "scripts": {
-        "client": "cd client && npm i && npm run build",
-        "server": "node app.js",
-        "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+        "client-start": "cd client && npm i && npm run start",
+        "client-build": "cd client && npm i && npm run build",
+        "server-start": "./node_modules/.bin/netlify-lambda serve src",
+        "server-build": "./node_modules/.bin/netlify-lambda build src",
+        "start": "concurrently --kill-others-on-fail \"npm run server-start\" \"npm run client-start\"",
+        "build": "concurrently --kill-others-on-fail \"npm run server-build\" \"npm run client-build\""
     },
     "dependencies": {
         "amrhextotext": "^1.1.1",
@@ -16,9 +19,11 @@
         "mongoose": "^5.10.0",
         "mongoose-unique-validator": "^2.0.3",
         "multer": "^1.4.2",
+        "netlify-lambda": "^2.0.1",
         "querystring": "^0.2.0",
         "react-scripts": "^4.0.0",
         "request": "^2.88.2",
+        "serverless-http": "^2.6.0",
         "styled-components": "^5.1.1"
     },
     "devDependencies": {
