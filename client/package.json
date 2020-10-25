@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start webpack-dev-server --inline --hot",
-    "build": "react-scripts build webpack-dev-server --inline --hot",
+    "build": "react-scripts build webpack-dev-server --inline --hot && move build ../dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
