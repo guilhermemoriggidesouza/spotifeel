@@ -7,7 +7,7 @@
         "server-start": "./node_modules/.bin/netlify-lambda serve src",
         "server-build": "./node_modules/.bin/netlify-lambda build src",
         "start": "concurrently --kill-others-on-fail \"npm run server-start\" \"npm run client-start\"",
-        "build": "concurrently --kill-others-on-fail \"npm run server-build\" \"npm run client-build\""
+        "build": "concurrently --kill-others-on-fail \"npm run client-build\" \"npm run server-build\""
     },
     "dependencies": {
         "amrhextotext": "^1.1.1",
