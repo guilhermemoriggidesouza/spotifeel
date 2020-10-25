@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/static/js/main.33188e90.chunk.js",
+    "main.js.map": "/static/js/main.33188e90.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.26e7b110.js",
+    "runtime-main.js.map": "/static/js/runtime-main.26e7b110.js.map",
+    "static/js/2.ce2547db.chunk.js": "/static/js/2.ce2547db.chunk.js",
+    "static/js/2.ce2547db.chunk.js.map": "/static/js/2.ce2547db.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3fa5f58e61fd18512159ab3c25a1a45a.js": "/precache-manifest.3fa5f58e61fd18512159ab3c25a1a45a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.ce2547db.chunk.js.LICENSE.txt": "/static/js/2.ce2547db.chunk.js.LICENSE.txt",
+    "static/media/lineto-circular-black.otf": "/static/media/lineto-circular-black.1e333b7e.otf",
+    "static/media/lineto-circular-black.ttf": "/static/media/lineto-circular-black.47be2e4a.ttf",
+    "static/media/lineto-circular-black.woff": "/static/media/lineto-circular-black.7ec8e720.woff",
+    "static/media/lineto-circular-black.svg": "/static/media/lineto-circular-black.b3508617.svg",
+    "static/media/lineto-circular-black.woff2": "/static/media/lineto-circular-black.e6a159ce.woff2",
+    "static/media/logo.svg": "/static/media/logo.9ab0d4f6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.26e7b110.js",
+    "static/js/2.ce2547db.chunk.js",
+    "static/js/main.33188e90.chunk.js"
+  ]
+}
