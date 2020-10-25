@@ -2,8 +2,8 @@
     "name": "api-ia-emotions",
     "version": "1.0.0",
     "scripts": {
-        "client": "cd client && npm run clean && npm i && npm run build",
-        "server": "npm run clean && node app.js",
+        "client": "cd client && npm cache clean --force && npm i && npm run build",
+        "server": "npm cache clean --force && node app.js",
         "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
     },
     "dependencies": {
