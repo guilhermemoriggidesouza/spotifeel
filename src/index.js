@@ -5,7 +5,7 @@ const express = require('express');
 var path = require('path'); 
 var { loginController, playlistController} = require('./controller')
   
-var upload = multer({ dest: '../uploads/',
+var upload = multer({ dest: './uploads/',
     rename: function (fieldname, filename) {
         return fieldname + '-' + Date.now();
     },  
