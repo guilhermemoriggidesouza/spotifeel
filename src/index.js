@@ -3,7 +3,7 @@ const serverless = require('serverless-http');
 var multer = require('multer'); 
 const express = require('express');
 var path = require('path'); 
-var { loginController, playlistController} = require('../controller')
+var { loginController, playlistController} = require('./controller')
   
 var upload = multer({ dest: '../uploads/',
     rename: function (fieldname, filename) {
