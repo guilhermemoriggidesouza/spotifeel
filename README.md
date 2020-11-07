@@ -22,7 +22,7 @@ Musica sempre foi pra mim algo único, nesse exato momento estou escutando músi
 
 ## Implementações Futuras 
 
+- [ ] Api Serverless
 - [ ] Inteligencia Artificial
-- [ ] Api Microsservicos
 - [ ] Rede Social
 - [ ] Área de pesquisa de músicas
