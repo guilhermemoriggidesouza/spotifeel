@@ -2,8 +2,7 @@
     "name": "api-ia-emotions",
     "version": "1.0.0",
     "scripts": {
-        "start": "./node_modules/.bin/netlify-lambda serve src",
-        "build": "./node_modules/.bin/netlify-lambda build src"
+        "start": "node app.jss",
     },
     "dependencies": {
         "amrhextotext": "^1.1.1",
