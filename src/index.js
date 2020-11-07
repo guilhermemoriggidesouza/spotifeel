@@ -31,6 +31,7 @@ router.get('/uploads/:file', (req, res)=>{
     res.sendFile(path.join(__dirname, './uploads/'+req.params.file))
 })
 
-app.use('/.netlify/functions/index', router)
+app.use('', router)
 
-module.exports.handler = serverless(app)
+
+module.exports = app
