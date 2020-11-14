@@ -30,7 +30,7 @@ router.get('/ultimaMusica/playlist/:idPlaylist',  (req, res) => playlistControll
 router.get('/uploads/:file', (req, res)=>{
     res.sendFile(path.join(__dirname, './uploads/'+req.params.file))
 })
-router.get('/', req, res =>{
+router.get('/', (req, res) =>{
     res.json({
         teste:"hello world"
     })
