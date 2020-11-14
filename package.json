@@ -2,7 +2,7 @@
     "name": "api-ia-emotions",
     "version": "1.0.0",
     "scripts": {
-        "start": "node app.jss"
+        "start": "node app.js"
     },
     "dependencies": {
         "amrhextotext": "^1.1.1",
