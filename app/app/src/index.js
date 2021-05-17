@@ -13,6 +13,8 @@ var upload = multer({ dest: './uploads/',
 
 var router = express.Router();
 
+router.get('/node',  (req, res) => res.send("in node"))
+
 router.get('/login',  (req, res) => loginController.validateLogin(req, res))
 
 router.post('/login',  (req, res) => loginController.createLogin(req, res))

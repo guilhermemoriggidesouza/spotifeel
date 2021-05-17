@@ -1,0 +1,14 @@
+version: '3.0'
+
+services:
+  app:
+    build: ../app
+    image: api/app
+    ports:
+      - "5000:5000"
+
+  ia:
+    build: ../ia
+    image: api/ia
+    ports:
+      - "5001:5000"
