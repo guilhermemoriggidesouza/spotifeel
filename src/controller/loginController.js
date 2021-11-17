@@ -3,7 +3,7 @@ const mPlaylist = require('../model/playlist')
 const hex = require('amrhextotext')
 
 function createPlaylists(user_id){
-    const feelings = ['Triste', 'Feliz', 'Raiva', 'Neutro']
+    const feelings = ['Triste', 'Feliz', 'Raiva', 'Angustia']
     const playlist = []
 
     feelings.forEach((feel)=>{
