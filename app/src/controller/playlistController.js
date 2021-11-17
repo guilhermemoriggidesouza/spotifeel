@@ -2,6 +2,7 @@ const mPlaylist = require('../model/playlist')
 const mUser = require('../model/user')
 const mMusic = require('../model/music')
 var url = require('url');
+var ObjectId = require('mongoose').Types.ObjectId;
 
 function fullUrl(req) {
   return url.format({
@@ -136,5 +137,12 @@ module.exports = {
     async getLastMusic(req, res){
         const musicEncaded = await returnMusicPlaylist(req.params.idPlaylist)
         res.send(musicEncaded[0])
+    },
+
+    async removeMusic(req, res) {
+        mPlaylist.findOneAndUpdate({ _id: req.query.idPlaylist }, { $pull: { music: req.params.id } }, { safe: true }, (err, numAffected) => {
+            mMusic.remove({ _id: req.params.id })
+            res.send(numAffected)
+        })
     }
 }

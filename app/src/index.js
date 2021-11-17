@@ -1,5 +1,4 @@
 var app = require('./server.js')
-const serverless = require('serverless-http');
 var multer = require('multer'); 
 const express = require('express');
 var path = require('path'); 
@@ -28,6 +27,8 @@ router.put('/playlist/:playlist',  (req, res) => playlistController.modifyOrderM
 router.get('/playlist/:idUser',  (req, res) => playlistController.getAllPlaylists(req, res))
 
 router.get('/ultimaMusica/playlist/:idPlaylist',  (req, res) => playlistController.getLastMusic(req, res))
+
+router.delete('/music/:id',  (req, res) => playlistController.removeMusic(req, res))
 
 router.get('/uploads/:file', (req, res)=>{
     res.sendFile(path.join(__dirname, './uploads/'+req.params.file))
